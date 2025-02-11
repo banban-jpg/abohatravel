@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aboha 여행</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1><a href="index.html">Aboha</a></h1>
+        <nav>
+          <ul>
+            <li><a href="trip.html">여행지</a></li>
+            <li><a href="blog.html">나의 여행일지</a></li>
+            <li><a href="contact.html">문의</a></li>
+            <li><a href="login.html">반준영님</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="itinerary">
+      <div class="container">
+        <h2>이런 일정은 어떠세요?</h2>
+        <p>Aboha가 추천하는 하루 일정을 확인하세요.</p>
+
+        <div class="schedule">
+          <!-- 아침 일정 -->
+          <div class="schedule-item">
+            <h3>아침</h3>
+            <div class="schedule-detail">
+              <div class="time">
+                <p>08:00 AM</p>
+              </div>
+              <div class="activity">
+                <p>로컬 카페에서 아침을 즐기세요.</p>
+                <p class="location">
+                  메가커피
+                  <button class="copy-btn" onclick="copyToClipboard(this)">
+                    복사하기
+                  </button>
+                </p>
+              </div>
+              <div class="image-placeholder"></div>
+            </div>
+          </div>
+
+          <!-- 낮 일정 -->
+          <div class="schedule-item">
+            <h3>낮</h3>
+            <div class="schedule-detail">
+              <div class="time">
+                <p>12:00 PM</p>
+              </div>
+              <div class="activity">
+                <p>도서관 또는 공원에서 여유로운 시간을 보내세요.</p>
+                <p class="location">
+                  별마당 도서관
+                  <button class="copy-btn" onclick="copyToClipboard(this)">
+                    복사하기
+                  </button>
+                </p>
+              </div>
+              <div class="image-placeholder"></div>
+            </div>
+          </div>
+
+          <!-- 점심 일정 -->
+          <div class="schedule-item">
+            <h3>점심</h3>
+            <div class="schedule-detail">
+              <div class="time">
+                <p>01:30 PM</p>
+              </div>
+              <div class="activity">
+                <p>현지 맛집에서 점심을 즐기세요.</p>
+                <p class="location">
+                  홍콩반점
+                  <button class="copy-btn" onclick="copyToClipboard(this)">
+                    복사하기
+                  </button>
+                </p>
+              </div>
+              <div class="image-placeholder"></div>
+            </div>
+          </div>
+
+          <!-- 저녁 일정 -->
+          <div class="schedule-item">
+            <h3>저녁</h3>
+            <div class="schedule-detail">
+              <div class="time">
+                <p>07:00 PM</p>
+              </div>
+              <div class="activity">
+                <p>칵테일 바에서 여유를 즐기세요.</p>
+                <p class="location">
+                  GS 편의점
+                  <button class="copy-btn" onclick="copyToClipboard(this)">
+                    복사하기
+                  </button>
+                </p>
+              </div>
+              <div class="image-placeholder"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sponsored-hotels">
+      <div class="container">
+        <h2>이런 숙소는 어떠세요?</h2>
+        <p>Aboha에서 제공하는 숙소 리스트입니다.</p>
+
+        <div class="hotel-list">
+          <!-- 숙소 1 -->
+          <div class="hotel-item">
+            <div class="hotel-image">
+              <img
+                src="https://via.placeholder.com/300x300"
+                alt="호텔 1 이미지"
+              />
+            </div>
+            <h3>그랜드 호텔</h3>
+          </div>
+
+          <!-- 숙소 2 -->
+          <div class="hotel-item">
+            <div class="hotel-image">
+              <img
+                src="https://via.placeholder.com/300x300"
+                alt="호텔 2 이미지"
+              />
+            </div>
+            <h3>비치 리조트</h3>
+          </div>
+
+          <!-- 숙소 3 -->
+          <div class="hotel-item">
+            <div class="hotel-image">
+              <img
+                src="https://via.placeholder.com/300x300"
+                alt="호텔 3 이미지"
+              />
+            </div>
+            <h3>도시 중심의 호텔</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Aboha 여행 웹사이트. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- 복사 완료 팝업 -->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <p>복사 완료!</p>
+        <button onclick="closePopup()">닫기</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
